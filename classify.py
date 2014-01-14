@@ -76,7 +76,7 @@ def main(argv):
     if f == "tfidf":
         plist.append(("tfidf", TfidfTransformer()))
     elif f == "chi2":
-        plist.append(("chi2", SelectKBest(chi2, k=1000)))
+        plist.append(("chi2", SelectKBest(chi2, k=250)))
     else:
         sys.exit(optErrorMsg)
 
@@ -101,9 +101,9 @@ def main(argv):
     data = []
     gold = []
 
-    for d in test:
-        data.append(d[0])
-        gold.append(d[1])
+    for f in test:
+        data.append(f[0])
+        gold.append(f[1])
 
     guess = classifier.batch_classify(data)
 
