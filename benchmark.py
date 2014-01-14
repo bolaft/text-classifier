@@ -26,7 +26,7 @@ def main(argv):
     if len(argv) > 0:
         sys.exit("This script takes no argument")
 
-    for c in ["NB", "SVM", "DT", "KNN"]:
+    for c in ["NB", "SVM", "KNN"]:
         for f in ["tfidf", "chi2"]:
             print("Running " + CLASSIFY_FILE + " with parameters \"" + c + "\" and \"" + f + "\"")
             subprocess.call("python " + CLASSIFY_FILE + " -c " + c + " -f " + f, shell=True)
