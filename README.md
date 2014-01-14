@@ -1,3 +1,1 @@
-Requires NLTK, TextBlob, scipy, scikit-learn and SVMLight
-''pip install -U nltk textblob scipy scikit-learn svmlight''
-Requires the NLTK "Reuters" corpus
+Requires NLTK, scipy and scikit-learn: `pip install -U nltk scipy scikit-learn`
