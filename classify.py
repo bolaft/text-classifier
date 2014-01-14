@@ -9,7 +9,7 @@
     Soufian Salim (soufi@nsal.im)
 
 :Date:
-    12 january 2013 (creation)
+    12 january 2014 (creation)
 
 :Description:
     Text classifier
